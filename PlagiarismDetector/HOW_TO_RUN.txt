@@ -1,0 +1,63 @@
+====================================================
+  HOW TO RUN — Smart Plagiarism Detection System
+  PlagCoders | TCS-408 | JAVA-IV-T167
+====================================================
+
+BEFORE ANYTHING — INSTALL JAVA (if not installed):
+  1. Go to: https://adoptium.net
+  2. Click the big green "Latest LTS Release" button
+  3. Install it like a normal program (Next → Next → Finish)
+  4. Done. Java is installed.
+
+----------------------------------------------------
+WINDOWS USERS — TO RUN:
+----------------------------------------------------
+  1. Extract the ZIP anywhere you like (e.g. Desktop)
+  2. Open the extracted folder: PlagiarismDetector
+  3. DOUBLE-CLICK:  START.bat
+  4. First time: it will auto-download a small file (h2.jar, ~2 MB)
+  5. The application will open automatically!
+
+  NOTE: If Windows says "Windows protected your PC" — 
+        click "More info" → "Run anyway". 
+        This just means the file isn't signed.
+
+----------------------------------------------------
+MAC / LINUX USERS — TO RUN:
+----------------------------------------------------
+  1. Extract the ZIP anywhere you like
+  2. Open Terminal
+  3. Type:  cd  then drag the PlagiarismDetector folder into the terminal → press Enter
+  4. Type:  ./start.sh   → press Enter
+  5. First time: it will auto-download h2.jar (~2 MB)
+  6. The application will open!
+
+  If it says "permission denied", first run:
+      chmod +x start.sh
+  Then try again.
+
+----------------------------------------------------
+IF AUTO-DOWNLOAD FAILS (no internet at runtime):
+----------------------------------------------------
+  Manually download this ONE file:
+  URL: https://repo1.maven.org/maven2/com/h2database/h2/2.2.224/h2-2.2.224.jar
+
+  Save it as:  h2.jar
+  Put it in:   PlagiarismDetector/lib/h2.jar
+
+  Then run START.bat (Windows) or ./start.sh (Mac/Linux) again.
+
+----------------------------------------------------
+HOW TO USE THE APP:
+----------------------------------------------------
+  1. Click "Load File" on the LEFT  → pick your first document  (TXT, PDF, or DOCX)
+  2. Click "Load File" on the RIGHT → pick your second document
+  3. Click "Compare Documents"
+  4. Switch to the "Results" tab to see the scores
+  5. Click "Save Report" to export an HTML + TXT report
+
+  Database is automatic — it saves everything to a file
+  called plagiarism_data.mv.db in the same folder.
+  No MySQL, no server, no setup needed!
+
+====================================================
